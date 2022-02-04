@@ -27,7 +27,7 @@ def user(user_id):
             f.write(decode_string)
         # append a default lowest possible score with the username
         with open(f"score.txt", 'a') as f:
-            f.write(f"{user_id} 10000\n")
+            f.write(f"{user_id} 0\n")
             print(user_id)
             return jsonify({"res": user_id})
     else:
