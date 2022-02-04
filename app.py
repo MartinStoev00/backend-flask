@@ -84,7 +84,7 @@ def user2():
                 if user_id in lines[i]:
                     old_score = int(lines[i].split(" ")[1])
                     print(lines[i])
-                    if old_score > score:
+                    if old_score < score:
                         lines[i] = f"{user_id} {score}"
                     break
             new_str = "\n".join(lines)
